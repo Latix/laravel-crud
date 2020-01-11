@@ -9,8 +9,9 @@
 
     </head>
     <body>
-    <h1>About</h1>
+    <h1>Welcome To Forbes</h1>
     <p>
-        This is the about page
+        This is forbes application from scratch
+    </p>
     </body>
 </html>
