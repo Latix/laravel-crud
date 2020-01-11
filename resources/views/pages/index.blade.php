@@ -1,17 +1,14 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>{{config('app.name', 'Forbes')}}</title>
-
-    </head>
-    <body>
-    <h1>Welcome To Forbes</h1>
-    <p>
-        This is forbes application from scratch
-    </p>
-    </body>
-</html>
+@section('content')
+    <div class="jumbotron text-center">
+        <h1>{{$title}}</h1>
+        <p>
+            This is forbes application from scratch
+        </p>
+        <p>
+            <a href="#" class="btn btn-primary btn-md" href="/login" role="button">Login</a>
+            <a href="#" class="btn btn-success btn-md" href="/login" role="button">Register</a>
+        </p>
+    </div>
+@endsection
