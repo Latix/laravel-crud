@@ -74,7 +74,8 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+        return view('posts.edit')->with('post', $post);
     }
 
     /**
@@ -86,7 +87,16 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post = Post::find($id);
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+
+        $data = array(
+            'post'    => $post,
+            'success' => 'Post Updated'
+        );
+        return redirect('./posts/'.$id.'/edit')->with($data);
     }
 
     /**
@@ -97,6 +107,8 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete();
+        return redirect('./posts')->with('error', 'Post Removed!');
     }
 }

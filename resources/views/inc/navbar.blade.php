@@ -17,7 +17,7 @@
                 <li><a href="/posts">Blog</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/create/posts">Create Posts</a></li>
+                <li><a href="/posts/create">Create Posts</a></li>
             </ul>
         </div>
     </div>
