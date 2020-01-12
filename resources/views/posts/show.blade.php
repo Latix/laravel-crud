@@ -7,7 +7,7 @@
         {!!$post->body!!}
     </div>
     <hr>
-    <small>Written on {{$post->created_at}}</small>
+    <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
     <form action="/posts/{{$post->id}}" method="POST">
         {{csrf_field()}}
         {{method_field('DELETE')}}
