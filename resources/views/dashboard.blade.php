@@ -14,7 +14,7 @@
                         </div>
                     @endif
                     <a href="/posts/create" class="btn btn-primary">Create Post</a>
-                    <h3>You are logged in!</h3>
+                    <h3>You are logged in...!</h3>
                     @if (count($posts) > 0)
                     <table class="table table-striped">
                         <tr>
