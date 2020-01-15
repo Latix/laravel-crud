@@ -7,8 +7,8 @@
             This is forbes application from scratch
         </p>
         <p>
-            <a href="#" class="btn btn-primary btn-md" href="/login" role="button">Login</a>
-            <a href="#" class="btn btn-success btn-md" href="/login" role="button">Register</a>
+            <a href="{{ route('login') }}" class="btn btn-primary btn-md" role="button">Login</a>
+            <a href="{{ route('register') }}" class="btn btn-success btn-md" role="button">Register</a>
         </p>
     </div>
 @endsection
